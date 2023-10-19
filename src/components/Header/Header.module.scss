@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+@keyframes topAnimation {
+    0% {
+        transform: translate(0, -100px)
+    }
+    100% {
+        transform: translate(0, 0)
+    }
+}
+
+.container {
+    background-color: #004aad;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+
+    .header {
+        display: flex;
+        position: relative;
+        padding: 5px 10px;
+        text-align: left;
+        color: white;
+        font-size: 30px;
+        gap: 50px;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1440px;
+        width: 100%;
+
+        .navContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        img, svg {
+            z-index: 10;
+            width: 65px;
+        }
+
+        .mobileNav {
+            position: absolute;
+            left: 0;
+            top: 75px;
+            transform: translate(0, 0);
+            padding: 10px;
+            background-color:  #004aad; 
+            width: 100%;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.2s ease;
+            animation: topAnimation 0.2s;
+            
+
+            a {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.button {
+    background-color:  #004aad; 
+    transition: all 0.5s;
+    color: white;
+    margin: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        color: lightblue;
+    }
+}
