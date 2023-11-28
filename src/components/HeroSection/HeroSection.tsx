@@ -13,7 +13,6 @@ export const HeroSection = () => {
     setLoading(true);
 
     if (process.env.REACT_APP_EMAIL && process.env.REACT_APP_PASSWORD) {
-      console.log(process.env.REACT_APP_EMAIL, process.env.REACT_APP_PASSWORD);
       pb.admins
         .authWithPassword(
           process.env.REACT_APP_EMAIL,
