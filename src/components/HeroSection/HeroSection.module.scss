@@ -68,6 +68,10 @@ body, html {
         justify-content: center;
         margin-bottom: 10px;
 
+        @media (max-width: 767px) {
+          flex-direction: column;
+        }
+
         input {
           height: 100%;
           border: none;
@@ -75,6 +79,12 @@ body, html {
           height: 38px;
           padding: 10px;
           border-radius: 10px 0 0 10px;
+
+          @media (max-width: 767px) {
+            border-radius: 10px;
+            width: 90%;
+            height: 40px;
+          }
         }
         
         .button {
@@ -89,6 +99,12 @@ body, html {
           padding: 10px;
           border-radius: 0 10px 10px 0;
           cursor: pointer;
+
+          @media (max-width: 767px) {
+            border-radius: 10px;
+            margin-top: 10px;
+            width: 90%;
+          }
       
           &:hover {
             background-color: white;
