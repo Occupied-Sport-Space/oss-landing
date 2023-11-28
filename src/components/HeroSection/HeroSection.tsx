@@ -21,12 +21,20 @@ export const HeroSection = () => {
         )
         .then(() => {
           pb.collection("emails")
-            .create({
-              email: search,
-            })
-            .then(() => {
-              setSearch("");
-              setSuccess(true);
+            .getFullList()
+            .then((data) => {
+              if (data.length <= 50) {
+                pb.collection("emails")
+                  .create({
+                    email: search,
+                  })
+                  .then(() => {
+                    setSearch("");
+                    setSuccess(true);
+                  })
+                  .catch((e) => console.error(e))
+                  .finally(() => setLoading(false));
+              }
             })
             .catch((e) => console.error(e))
             .finally(() => setLoading(false));
