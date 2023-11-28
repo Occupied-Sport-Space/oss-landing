@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -7,36 +8,16 @@ import styles from "./Header.module.scss";
 
 const Nav = () => (
   <>
-    <a
-      target="_blank"
-      href="https://youtu.be/fC7oUOUEEi4?si=hiEYg30G3vVbYwLK"
-      className={styles.button}
-      rel="noreferrer"
-    >
+    <a href="#" className={styles.button} rel="noreferrer">
       Home
     </a>
-    <a
-      target="_blank"
-      href="https://youtu.be/fC7oUOUEEi4?si=hiEYg30G3vVbYwLK"
-      className={styles.button}
-      rel="noreferrer"
-    >
+    <a href="#" className={styles.button} rel="noreferrer">
       About us
     </a>
-    <a
-      target="_blank"
-      href="https://youtu.be/fC7oUOUEEi4?si=hiEYg30G3vVbYwLK"
-      className={styles.button}
-      rel="noreferrer"
-    >
+    <a href="#" className={styles.button} rel="noreferrer">
       Waitlist
     </a>
-    <a
-      target="_blank"
-      href="https://youtu.be/fC7oUOUEEi4?si=hiEYg30G3vVbYwLK"
-      className={styles.button}
-      rel="noreferrer"
-    >
+    <a href="#" className={styles.button} rel="noreferrer">
       Contact us!
     </a>
   </>
@@ -50,7 +31,7 @@ export const Header = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <img src={logo} alt="OSS logo" />
-        {/* {isMobile ? (
+        {isMobile ? (
           open ? (
             <AiOutlineClose onClick={() => setOpen(false)} />
           ) : (
@@ -58,14 +39,14 @@ export const Header = () => {
           )
         ) : (
           <div className={styles.navContainer}>
-            <MobileNav />
+            <Nav />
           </div>
         )}
         {open && isMobile && (
           <div className={styles.mobileNav}>
-            <MobileNav />
+            <Nav />
           </div>
-        )} */}
+        )}
       </div>
     </div>
   );
