@@ -5,7 +5,7 @@ import logo from "../../assets/OSS.svg";
 import useWindowWidth from "../../helpers/useWindowWidth";
 import styles from "./Header.module.scss";
 
-const MobileNav = () => (
+const Nav = () => (
   <>
     <a
       target="_blank"
@@ -50,7 +50,7 @@ export const Header = () => {
     <div className={styles.container}>
       <div className={styles.header}>
         <img src={logo} alt="OSS logo" />
-        {isMobile ? (
+        {/* {isMobile ? (
           open ? (
             <AiOutlineClose onClick={() => setOpen(false)} />
           ) : (
@@ -65,7 +65,7 @@ export const Header = () => {
           <div className={styles.mobileNav}>
             <MobileNav />
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
