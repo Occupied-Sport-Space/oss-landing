@@ -11,16 +11,27 @@ export const HeroSection = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-    pb.collection("emails")
-      .create({
-        email: search,
-      })
-      .then(() => {
-        setSearch("");
-        setSuccess(true);
-      })
-      .catch((e) => console.error(e))
-      .finally(() => setLoading(false));
+
+    if (process.env.REACT_APP_EMAIL && process.env.REACT_APP_PASSWORD) {
+      console.log(process.env.REACT_APP_EMAIL, process.env.REACT_APP_PASSWORD);
+      pb.admins
+        .authWithPassword(
+          process.env.REACT_APP_EMAIL,
+          process.env.REACT_APP_PASSWORD
+        )
+        .then(() => {
+          pb.collection("emails")
+            .create({
+              email: search,
+            })
+            .then(() => {
+              setSearch("");
+              setSuccess(true);
+            })
+            .catch((e) => console.error(e))
+            .finally(() => setLoading(false));
+        });
+    }
   };
 
   return (
