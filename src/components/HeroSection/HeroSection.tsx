@@ -76,7 +76,7 @@ export const HeroSection = () => {
               </span>
             )}
             <a className={styles.download} href="/download/demo.apk" download>
-              Click here to try out our demo!
+              Click here to download our demo! (only for android users)
             </a>
           </div>
         </div>
