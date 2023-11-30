@@ -75,6 +75,9 @@ export const HeroSection = () => {
                 You've successfully joined the OSS waitlist!
               </span>
             )}
+            <a className={styles.download} href="/download/demo.apk" download>
+              Click here to try out our demo!
+            </a>
           </div>
         </div>
       </div>

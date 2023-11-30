@@ -61,6 +61,17 @@ body, html {
         font-size: 12px;
       }
 
+      .download {
+        color: white;
+        cursor: pointer;
+        font-size: 12px;
+        transition: all 0.2s;
+
+        &:hover {
+          color: #678987;
+        }
+      }
+
       form {
         display: flex;
         flex-direction: row;
