@@ -65,10 +65,17 @@ body, html {
         color: white;
         cursor: pointer;
         font-size: 12px;
-        transition: all 0.2s;
+        text-align: center;
+        margin: 0 100px;
+        
+        a {
+          color: blue;
+          transition: all 0.2s;
+          text-decoration: underline;
 
-        &:hover {
-          color: #678987;
+          &:hover {
+            color: lightblue;
+          }
         }
       }
 
