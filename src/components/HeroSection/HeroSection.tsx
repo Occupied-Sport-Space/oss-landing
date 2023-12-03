@@ -42,7 +42,7 @@ export const HeroSection = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="heroSection">
       <div className={styles.relativePos}>
         <div className={styles.textContainer}>
           <div className={styles.text}>

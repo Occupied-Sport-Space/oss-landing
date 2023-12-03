@@ -6,15 +6,18 @@ body, html {
   box-sizing: border-box;
 }
 
+.container {
+  height: 100vh;
+}
+
 .image {
   filter: blur(8px);
   -webkit-filter: blur(8px);
-  height: calc(100% - 90px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 90px);
+  height: 100vh;
   z-index: 0;
   position: relative;
 }
@@ -24,11 +27,10 @@ body, html {
 
   .textContainer {
     position: absolute;
-    top: -15px;
     left: 0%;
     z-index: 1;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;

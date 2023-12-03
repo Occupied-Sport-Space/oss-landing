@@ -8,16 +8,20 @@ import styles from "./Header.module.scss";
 
 const Nav = () => (
   <>
-    <a href="#" className={styles.button} rel="noreferrer">
+    <a href="#heroSection" className={styles.button} rel="noreferrer">
       Home
     </a>
-    <a href="#" className={styles.button} rel="noreferrer">
+    <a href="#about" className={styles.button} rel="noreferrer">
       About us
     </a>
     <a href="#" className={styles.button} rel="noreferrer">
       Waitlist
     </a>
-    <a href="#" className={styles.button} rel="noreferrer">
+    <a
+      href="mailto:mailto:occupiedsportspace@gmail.com"
+      className={styles.button}
+      rel="noreferrer"
+    >
       Contact us!
     </a>
   </>
