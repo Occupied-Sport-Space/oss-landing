@@ -14,9 +14,6 @@ const Nav = () => (
     <a href="#about" className={styles.button} rel="noreferrer">
       About us
     </a>
-    <a href="#" className={styles.button} rel="noreferrer">
-      Waitlist
-    </a>
     <a
       href="mailto:mailto:occupiedsportspace@gmail.com"
       className={styles.button}
