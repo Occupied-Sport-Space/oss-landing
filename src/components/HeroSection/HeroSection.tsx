@@ -22,7 +22,7 @@ export const HeroSection = () => {
           pb.collection("emails")
             .getFullList()
             .then((data) => {
-              if (data.length <= 50) {
+              if (data.length <= 100) {
                 pb.collection("emails")
                   .create({
                     email: search,
