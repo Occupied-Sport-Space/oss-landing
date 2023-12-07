@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FaFacebook,
+  FaGithub,
   FaInstagramSquare,
   FaLinkedin,
   FaLongArrowAltRight,
@@ -34,6 +35,13 @@ const ContactUs = () => {
             rel="noreferrer"
           >
             <FaLinkedin size={35} />
+          </a>
+          <a
+            href="https://github.com/Occupied-Sport-Space"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub size={35} />
           </a>
         </div>
         <span className={styles.email}>

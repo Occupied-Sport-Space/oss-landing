@@ -20,6 +20,7 @@ const Nav = () => (
     <a
       href="/download/final_demo.apk"
       download
+      onClick={() => alert("Only for android users!")}
       className={styles.downloadButton}
     >
       Download demo!
