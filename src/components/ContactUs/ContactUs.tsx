@@ -4,7 +4,6 @@ import {
   FaGithub,
   FaInstagramSquare,
   FaLinkedin,
-  FaLongArrowAltRight,
 } from "react-icons/fa";
 
 import styles from "./ContactUs.module.scss";
