@@ -14,12 +14,15 @@ const Nav = () => (
     <a href="#about" className={styles.button} rel="noreferrer">
       About us
     </a>
-    <a
-      href="mailto:mailto:occupiedsportspace@gmail.com"
-      className={styles.button}
-      rel="noreferrer"
-    >
+    <a href="#contact" className={styles.button} rel="noreferrer">
       Contact us!
+    </a>
+    <a
+      href="/download/final_demo.apk"
+      download
+      className={styles.downloadButton}
+    >
+      Download demo!
     </a>
   </>
 );

@@ -81,3 +81,22 @@
         color: lightblue;
     }
 }
+
+.downloadButton {
+    background: white;
+    color: #004aad;
+    padding: 10px;
+    border-radius: 15px;
+    transition: all 0.5s;
+    margin: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+        background-color: #004aad;
+    }
+
+}

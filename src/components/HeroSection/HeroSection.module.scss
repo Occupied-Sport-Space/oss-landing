@@ -70,8 +70,9 @@ body, html {
         text-align: center;
         
         a {
-          color: blue;
+          color: white;
           transition: all 0.2s;
+          font-size: 20px;
           text-decoration: underline;
 
           &:hover {
