@@ -1,20 +1,35 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from "react";
+import React, { FC, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import logo from "../../assets/OSS.svg";
 import useWindowWidth from "../../helpers/useWindowWidth";
 import styles from "./Header.module.scss";
 
-const Nav = () => (
+const Nav: FC<{ setIsOpen: (val: boolean) => void }> = ({ setIsOpen }) => (
   <>
-    <a href="#heroSection" className={styles.button} rel="noreferrer">
+    <a
+      onClick={() => setIsOpen(false)}
+      href="#heroSection"
+      className={styles.button}
+      rel="noreferrer"
+    >
       Home
     </a>
-    <a href="#about" className={styles.button} rel="noreferrer">
+    <a
+      onClick={() => setIsOpen(false)}
+      href="#about"
+      className={styles.button}
+      rel="noreferrer"
+    >
       About us
     </a>
-    <a href="#contact" className={styles.button} rel="noreferrer">
+    <a
+      onClick={() => setIsOpen(false)}
+      href="#contact"
+      className={styles.button}
+      rel="noreferrer"
+    >
       Contact us!
     </a>
     <a
@@ -44,12 +59,12 @@ export const Header = () => {
           )
         ) : (
           <div className={styles.navContainer}>
-            <Nav />
+            <Nav setIsOpen={setOpen} />
           </div>
         )}
         {open && isMobile && (
           <div className={styles.mobileNav}>
-            <Nav />
+            <Nav setIsOpen={setOpen} />
           </div>
         )}
       </div>
