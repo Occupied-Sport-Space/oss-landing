@@ -33,7 +33,7 @@ const Nav: FC<{ setIsOpen: (val: boolean) => void }> = ({ setIsOpen }) => (
       Contact us!
     </a>
     <a
-      href="/download/final_demo.apk"
+      href="/download/oss-new-be.apk"
       download
       onClick={() => alert("Only for android users!")}
       className={styles.downloadButton}
